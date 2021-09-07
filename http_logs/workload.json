@@ -9,7 +9,7 @@
 {
   "version": 2,
   "description": "HTTP server log data",
-  "#TODO": "Replace index definitions with a template after setting the workload version to 2. Explicit index definitions are not necessary anymore.",
+  "#TODO": "Replace index definitions with a template after setting the track version to 2. Explicit index definitions are not necessary anymore.",
   "indices": [
     {
       "name": "logs-181998",
@@ -48,7 +48,7 @@
       {%- if ingest_pipeline is defined and ingest_pipeline == "grok" or runtime_fields is defined %}
         {
           "name": "http_logs_unparsed",
-          "base-url": "https://rally-workloads.elastic.co/http_logs",
+          "base-url": "https://rally-tracks.elastic.co/http_logs",
           "documents": [
           {
             "target-index": "logs-181998",
@@ -104,7 +104,7 @@
     {%- else %}
       {
         "name": "http_logs",
-        "base-url": "https://rally-workloads.elastic.co/http_logs",
+        "base-url": "https://rally-tracks.elastic.co/http_logs",
         "documents": [
           {
             "target-index": "logs-181998",
