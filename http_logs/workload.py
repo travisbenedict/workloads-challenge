@@ -1,8 +1,8 @@
 from copy import copy
 import re
 
-from esrally import exceptions
-from esrally.workload import loader
+from osbenchmark import exceptions
+from osbenchmark.workload import loader
 
 
 def reindex(es, params):
