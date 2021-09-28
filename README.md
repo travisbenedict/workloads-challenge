@@ -1,5 +1,5 @@
 Benchmark-Workloads
-------------
+-------------------
 
 This repository contains the default workload specifications for the OpenSearch benchmarking tool [Benchmark](https://github.com/opensearch-project/OpenSearch-Benchmark/blob/main/DEVELOPER_GUIDE.md).
 

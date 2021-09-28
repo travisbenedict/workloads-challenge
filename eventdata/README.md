@@ -1,7 +1,7 @@
 ## EventData workload
 
 This workload is based on 20 million Apache access log entries generated based on statistics from sample
-elastic.co access logs using the generator avilable here: https://github.com/opensearch-project/OpenSearch-Benchmark/blob/main/DEVELOPER_GUIDE.md
+elastic.co access logs using a generator
 
 The size of the data file is around 15GB, which gives an average JSON record size of 822 bytes. Mappings have been optimized and some of the fields added through `geoip` and `user-agent` enrichment has been removed to achieve a more compact format.
 
