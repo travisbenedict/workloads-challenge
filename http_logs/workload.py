@@ -59,9 +59,9 @@ def register(registry):
         registry.register_runner("reindex", reindex_async, async_runner=True)
     else:
         registry.register_runner("reindex", reindex)
-    registry.register_workload_processor(RuntimeFieldResolver())
+    registry.register_track_processor(RuntimeFieldResolver())
     try:
-        registry.register_workload_processor(loader.DefaultWorkloadPreparator())
+        registry.register_track_processor(loader.DefaultWorkloadPreparator())
     except TypeError as e:
         if e == "__init__() missing 1 required positional argument: 'cfg'":
             pass
